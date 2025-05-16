@@ -74,6 +74,7 @@ export async function POST(request: Request) {
       },
     });
     return NextResponse.json(newPost, { status: 201 });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     console.error("Error creating post:", error);
     // Check for Prisma unique constraint violation for slug
