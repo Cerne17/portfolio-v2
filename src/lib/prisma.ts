@@ -4,6 +4,15 @@ import { PrismaClient } from "@prisma/client";
 // Prisma Client Instances to run at once and overload
 // the database
 
+// Example in an API route: pages/api/posts.ts (or app/api/posts/route.ts)
+/*
+import prisma from '@/lib/prisma'; // Adjust path if needed
+
+ ...
+ const posts = await prisma.post.findMany();
+ ...
+*/
+
 declare global {
   // eslint-disable-next-line no-var
   var prisma: PrismaClient | undefined;
