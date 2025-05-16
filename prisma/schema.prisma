@@ -25,7 +25,7 @@ model Post {
   views       Int     @default(0)
 
   createdAt   DateTime @default(now())
-  publishedAt DateTime
+  publishedAt DateTime?
   updatedAt   DateTime @updatedAt
 }
 
